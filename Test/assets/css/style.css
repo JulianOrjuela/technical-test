@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Block initial header black  */
+.header{
+background-color:#262626;
+padding:15px;
+
+}
+#logo{
+width: 20%;
+padding: 10% 0px 20px 21px;
+}
+h1{
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+color:#3e454b;
+}
+span{
+  color:#fc0d67;
+}
+
+/* Block animation*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float:left;
+  padding: 15px;
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;  padding: 3% 75px 0px 10% ;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.circle{
+  width: 300px;
+  height: 300px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fc0d67;
+
+}
+
+.circle:hover{
+transition: background-color 2s;
+background-color: #000;
+
+}
+.diamond{
+
+  width: 250px; 
+  height: 250px; 
+  border: 3px solid #0decfc; 
+  background: #0decfc;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 38%;
+  left: 60%;
+
+}
+
+/* Block animate */
+
+#animate{
+    background: #0decfc;
+    position: relative;
+    margin-top: -5%;
+    padding-bottom: 50px;
+     -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+
+}
+
+.picture{
+   width: 530px; 
+     height: 250px; 
+     background: #fc0d67;
+     margin-top: -20%;
+     transition: width 2s, height 2s, margin 2s;
+  }
+
+#transition:hover{
+
+  background-color: #000;
+  width: 20%;
+
+}
+
+#can-animate{text-align: right;}
+
+#can-animate h1{color:#fafafa;}
+#can.animate p{ width: 250px;}
+
+
+/* Block Modal */
+
+#modal-first{
+
+  padding: 50px 0px 60px 0px;
+}
+.modal-first{
+  padding-top: 75px;
+    text-align: right;
+}
+
+
+  button{
+    padding: 10px 25px;
+    color: #fafafa;
+    background: #fc0d67;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+ button:hover{
+transition: background-color 2s;
+background-color: #000;
+}
+
+
+.cancelbtn { 
+
+    background-color: #fc0d67; 
+} 
+  
+  
+.cancelbtn,.signupbtn {float:left;width:50%} 
+  
+  
+.container { 
+    padding: 16px; 
+} 
+  
+  
+.modal { 
+    display: none;  
+    position: fixed;  
+    z-index: 1; left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%;  
+    overflow: auto;  
+    background-color: rgb(0,0,0);  
+    background-color: rgba(0,0,0,0.4);  
+    padding-top: 60px; 
+} 
+  
+  
+.modal-content { 
+    background-color: #fefefe; 
+    margin: 5% auto 15% auto;  
+    border: 1px solid #888; 
+    width: 80%;   
+} 
+  
+  
+.close { 
+    position: absolute; 
+    right: 35px; 
+    top: 15px; 
+    color: #000; 
+    font-size: 40px; 
+    font-weight: bold; 
+} 
+  
+.close:hover, 
+.close:focus { 
+    color: #fc0d67; 
+    cursor: pointer; 
+} 
+  
+  
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table; 
+} 
+ 
+input[type=email],input[type=text],input[type=number], input[type=password] { 
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 1px solid #0decfc; 
+    box-sizing: border-box; 
+} 
+
+.title-form{
+  text-align: center;
+}
+  
+
+
+/* Block footer */
+.footer{
+padding:10px;
+margin-top:7px;
+font-size:12px;
+font-family: 'Montserrat', sans-serif;
+color:#3e454b;
+    background: #eee !important;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+#logo{
+width: 80%;
+
+}
+
+.col-5 {
+  width: 100%;
+  padding: 3% 20px 0px 17% ;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fc0d67;
+
+}
+
+.diamond{
+
+  width: 150px; 
+  height: 150px; 
+  border: 3px solid #0decfc; 
+  background: #0decfc;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+      position: absolute;
+    top: 45%;
+    left: 45%;
+
+}
+
+#animate{    margin-top: -14%;}
+ .picture {
+    width: 290px;
+    height: 150px;
+    background: #fc0d67;
+    margin-top: 0%;
+    right: 36px;
+    position: relative;
+}
+
+#transition:hover{
+
+  background-color: #000;
+  width: 20%;
+}
+
+.modal-first{
+  padding: 5px 0px 30px 0px;
+  text-align: center;
+}
+
+
+.footer{
+background-color:#eee;
+text-align:center;
+}
+
+
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+
+#logo{
+width: 90%;
+
+}
+
+.col-5 {
+  width: 100%;
+  padding: 3% 20px 0px 17% ;
+}
+
+
+.circle{
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fc0d67;
+
+}
+
+.diamond{
+
+  width: 150px; 
+  height: 150px; 
+  border: 3px solid #0decfc; 
+  background: #0decfc;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+      position: absolute;
+    top: 45%;
+    left: 45%;
+
+}
+
+#animate{    margin-top: -14%;}
+.picture {
+    width: 290px;
+    height: 150px;
+    background: #fc0d67;
+    margin-top: 0%;
+    right: 36px;
+    position: relative;
+}
+
+#transition:hover{
+
+  background-color: #000;
+  width: 20%;
+}
+
+.modal-first{
+  padding: 5px 0px 30px 0px;
+  text-align: center;
+}
+
+
+ .cancelbtn, .signupbtn { 
+       width: 100%; 
+    } 
+
+
+
+.footer{
+background-color:#eee;
+text-align:center;
+}
+}
